@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Contactformulier
+    body 
+  form(method='POST' action='/pages/contact')
+  div.form-group
+    label(for='name') Naam
+    input#name.form-control(name='name' type='text' required)
+  div.form-group
+    label(for='email') E-mailadres
+    input#email.form-control(name='email' type='email' required)
+  div.form-group
+    label(for='message') Bericht
+    textarea#message.form-control(name='message' rows='5' required)
+  button.btn.btn-primary(type='submit') Verstuur
